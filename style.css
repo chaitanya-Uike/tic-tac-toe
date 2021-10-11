@@ -64,7 +64,7 @@ main{
 
 #btn{
     position: relative;
-    bottom: 7rem;
+    bottom: 10vh;
     padding: 1rem;
     border: none;
     border-radius: 1rem;
