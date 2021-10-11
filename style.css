@@ -30,6 +30,7 @@ main{
     display: grid;
     place-items: center;
     grid-template-rows: auto 1fr auto;
+    grid-gap: 2rem;
 }
 
 .grid-container{
