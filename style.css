@@ -57,7 +57,7 @@ main{
 }
 
 #alerts{
-    font-size: 3rem;
+    font-size: clamp(0.5rem, 4vh, 3rem);
     padding: 1rem;
     margin: 2rem 0;
     color: coral;
