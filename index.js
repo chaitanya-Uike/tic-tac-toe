@@ -16,6 +16,8 @@ let flag = true;
 let count = 0;
 let won;
 
+let p1 = 0, p2 = 0;
+
 function resetBoard() {
     count = 0;
     flag = true;
@@ -57,10 +59,16 @@ function check() {
         won = true;
 
     if (won) {
-        if (flag)
+        if (flag) {
             instruction.innerText = "Player 2 won !";
-        else
+            p2++;
+            document.getElementById("scores").innerText = `${p1} / ${p2}`;
+        }
+        else {
             instruction.innerText = "Player 1 won !";
+            p1++;
+            document.getElementById("scores").innerText = `${p1} / ${p2}`;
+        }
     }
 
 }
