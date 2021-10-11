@@ -126,3 +126,10 @@ box8.addEventListener("click", function () { clicked(box8) });
 box9.addEventListener("click", function () { clicked(box9) });
 
 document.getElementById("btn").addEventListener("click", resetBoard);
+
+document.getElementById("reset").addEventListener("click", function () {
+    p1 = 0;
+    p2 = 0;
+    document.getElementById("scores").innerText = "0 / 0";
+    resetBoard();
+})

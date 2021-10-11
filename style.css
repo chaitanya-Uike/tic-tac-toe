@@ -25,6 +25,11 @@ header{
     padding: 2rem;
 }
 
+nav{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
 main{
     background-color: #FCD2D1;
     display: grid;
