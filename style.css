@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'DM Mono', monospace;
+    font-size: clamp(7px, 2vw, 10px);
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+header{
+    text-align: center;
+    background-color: #FF5C58;
+    color: #FFEDD3;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 2rem;
+}
+
+main{
+    background-color: #FCD2D1;
+    display: grid;
+    place-items: center;
+    grid-template-rows: auto 1fr auto;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "1 2 3"
+    "4 5 6"
+    "7 8 9";
+    grid-gap:0.5rem;
+}
+
+.grid-tile{
+    position: relative;
+    bottom: 4rem;
+    height: 10rem;
+    width: 10rem;
+    background-color: #FF5C58;
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #FCD2D1;
+}
+
+#alerts{
+    font-size: 3rem;
+    padding: 1rem;
+    margin: 2rem 0;
+    color: coral;
+}
+
+#btn{
+    position: relative;
+    bottom: 6rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 2rem;
+    background-color: lightpink;
+}
