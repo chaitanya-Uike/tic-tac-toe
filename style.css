@@ -86,3 +86,13 @@ main{
     font-size: 2rem;
     background-color: lightpink;
 }
+
+#game-reset{
+    border: none;
+    background-color: #FF5C58;
+    color: #FFEDD3;
+}
+
+#reset{
+    font-size: 3rem;
+}
